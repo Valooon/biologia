@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body style="background-color:#131313; text-align:center;" text="white">
+    <script>
+        var r1= document.quiz5.p1.value;
+        var r2= document.quiz5.p2.value;
+        var r3= document.quiz5.p3.value;
+        var contador=0;
+   var porcentaje;
+
+   if(r1 == 'A')
+   {
+       contador++;
+   }
+   if(r2 == 'B')
+   {
+       contador++;
+   }
+   if(r3 == 'A')
+   {
+       contador++;
+   }
+   porcentaje = contador *100/3;
+   porcentaje=parseInt(porcentaje);
+   var res="Sacaste un "+porcentaje+" de 100";
+   document.write("Sacaste un "+porcentaje+" de 100");
+   //return res;
+    </script>
+</body>
+</html>
