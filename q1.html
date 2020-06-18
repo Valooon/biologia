@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quiz 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/quiz1.js"></script>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="js/vex.combined.min.js"></script>
+    <link rel="stylesheet" href="css/vex.css" />
+    <link rel="stylesheet" href="css/vex-theme-default.css" />
+    <link rel="stylesheet" href="css/vex-theme-os.css" />
+    <link rel="stylesheet" href="css/vex-theme-plain.css" />
+    <link rel="stylesheet" href="css/vex-theme-wireframe.css" />
+    <link rel="stylesheet" href="css/vex-theme-flat-attack.css" />
+    <link rel="stylesheet" href="css/vex-theme-top.css" />
+    <link rel="stylesheet" href="css/vex-theme-bottom-right-corner.css"/>
+    <style>
+    /* Style the navigation bar */
+    .navbar {
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      overflow: auto;
+    }
+    
+    /* Navbar links */
+    .navbar a {
+      border-right: 1px solid #bbb;
+      float: left;
+      text-align: center;
+      padding: 12px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+      background-color: rgb(102, 102, 102);
+    }
+    
+    /* Current/active navbar link */
+    .active {
+      background-color: #272727;
+    }
+    
+    /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+      }
+    }
+</style> 
+<style>
+    .box {
+    background-color: #272727;
+    width: 300px;
+    border: 15px solid rgb(102, 102, 102);
+    padding: 50px;
+    margin: 20px;
+  }
+    #rcorners2 {
+    border-radius: 25px;
+    margin: 35px auto;
+    border: 3px solid #ffffff;
+    padding: 20px; 
+    width: auto;
+    height: auto;  
+  }
+  </style>
+
+  <style>
+      .button {
+  background-color: #131313; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}.button3 {border-radius: 8px;}
+  </style>
+</head>
+<body style="background-color:#131313;" text="white">
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Inicio</a>
+        <a class="active" href="q1.html"><i class="fa fa-fw fa-question-circle"></i> Quiz 1</a>
+        <a href="q2.html"><i class="fa fa-fw fa-question-circle"></i> Quiz 2</a>
+        <a href="q3.html"><i class="fa fa-fw fa-question-circle"></i> Quiz 3</a>
+        <a href="q4.html"><i class="fa fa-fw fa-question-circle"></i> Quiz 4</a>
+        <a href="q5.html"><i class="fa fa-fw fa-question-circle"></i> Quiz 5</a>
+    </div>
+    <h1 style="text-align: center;">Esqueleto Humano</h1>
+    <div class="box" style="text-align:center;" id="rcorners2">
+        <form name="quiz1">
+            <h2><b><u>¿Cuál es este hueso?</u></b></h2>
+            <img src="img/hueso1.png" width="230" height="250">
+            <br>
+            <input type="radio"   name="p1" value="A">Fémur.<br>
+            <input type="radio"   name="p1" value="B">Columna Vertebral.<br>
+            <input type="radio"   name="p1" value="C">Cráneo.<br>
+            <h2><b><u>¿Cuál es la función de este?</u></b></h2>
+            <input type="radio"   name="p2" value="A">Mantener el tronco erguido, articular los movimientos del tronco y proteger la médula espinal.<br> 
+            <input type="radio"   name="p2" value="B">Entregar la información al cerebro.<br>
+            <h2><b><u>¿Cuál es este hueso?</u></b></h2>
+            <img src="img/hueso2.png" width="230" height="250">
+            <br>
+            <input type="radio"   name="p3" value="A">Cráneo<br>
+            <input type="radio"   name="p3" value="B">Cadera<br>
+            <input type="radio"   name="p3" value="B">Fémur<br><br>
+       
+            <button type="button" onclick="vex.dialog.alert({message: 'Sacaste un '+ por()+ ' de 100', className: 'vex-theme-os'})">Terminar</button>
+        
+        </form>
+    </div>
+</body>
+</html>
